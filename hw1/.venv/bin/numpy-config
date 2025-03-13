@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/dankim/Downloads/Cal Stuff/Cal CourseWork F2020-Sp2025/Cal Berkeley Spring 2025/CS 189/Homework/hw1/.venv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from numpy._configtool import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
