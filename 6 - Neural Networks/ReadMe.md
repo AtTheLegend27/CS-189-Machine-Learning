@@ -74,13 +74,13 @@ I trained the model utilizing three different combinations of the hyperparameter
 
 Loss Graphs and Corresponding Learning rates and Layers:
 Model 1: Base Run(lr = 0.01, fc = 1): Test Loss: 0.3021 Test Accuracy: 0.88
-Graph: ![Learning Rate 0.01 FC = 1 Loss Graph](code/experiments/loss_graphs/loss_lr=0.01_fc=1.png)
+Graph: ![Learning Rate 0.01 FC = 1 Loss Graph](code/experiments/loss_graphs/fc1.png)
 
 Model 2: Run 2(lr = 0.1, fc = 2): Test Loss: 0.1251 Test Accuracy: 0.96
-Graph: ![Learning Rate 0.1 FC = 2 Loss Graph](code/experiments/loss_graphs/loss_lr=0.1_fc=2.png)
+Graph: ![Learning Rate 0.1 FC = 2 Loss Graph](code/experiments/loss_graphs/fc2.png)
 
 Model 3: Run 3(lr = 0.001, fc = 3): Test Loss: 0.1092 Test Accuracy: 0.96
-Graph: ![Learning Rate 0.001 FC = 3 Loss Graph](code/experiments/loss_graphs/loss_lr=0.001_fc=3.png)
+Graph: ![Learning Rate 0.001 FC = 3 Loss Graph](code/experiments/loss_graphs/fc3.png)
 
 From the results above, I found some intresting results. First, the Model 1 had a very smooth decreasing loss with both validation and training curves dropping and stabilitzing. This suggests good generalization and proper learning rate. Model 2 was perhaps the worst graphed loss possible. The graph had a loss curve that was jagged and unstable. Model 3 had intresting results, with more layers than Model 1 and a lower learning rate. The learning curves were smooth and had a slower convergence. In terms of test loss, we can see that Model 3 produced the lowest test loss and the highest test accuracy, leading me to believe that adding more layers and decreasing learning rate yields the best results. However, its worth noting that the bast model had the best balance of speed and accuracy.
 
