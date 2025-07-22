@@ -160,3 +160,5 @@ I made a different model with everything the same as the Frozen model except tha
 
 UnFrozen Plot: ![CIFAR UnFrozen Training/Validation Loss/Acc](code/cifar_mnist_tlearning/task2CIFAR_unfrozen_plot.png)
 num_trainable_parameters(UnFrozen) = 44428106
+
+mula
